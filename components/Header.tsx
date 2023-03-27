@@ -7,7 +7,7 @@ import { signIn, signOut, useSession } from 'next-auth/react'
 
 function Header() {
   const {data:session}= useSession()
-  
+  console.log(session)
   return (
     <div className='sticky top-0 z-50 flex space px-4'>
         <div className='relative h-10 w-20 flex-shrink-0'>
